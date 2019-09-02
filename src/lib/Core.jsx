@@ -463,7 +463,7 @@ class Core extends Component {
               }
             </div>
             <div>{ appLocale.question } { currentQuestionIndex + 1 }:</div>
-            <h3 dangerouslySetInnerHTML={this.rawMarkup(question.question)}/> 
+            <div dangerouslySetInnerHTML={this.rawMarkup(question.question)}/> 
             {
               this.renderTags(answerSelectionType, question.correctAnswer.length)
             }
